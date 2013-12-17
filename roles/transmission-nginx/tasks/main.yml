@@ -1,0 +1,10 @@
+---
+- name: Nginx configuration for Transmission
+  template: src=nginx.conf dest=/etc/nginx/sites-available/torrent.awea.fr
+
+- name: Link Transmission with Nginx  
+  command: ln -s /etc/nginx/sites-available/torrent.awea.fr /etc/nginx/sites-enabled/torrent.awea.fr
+  ignore_errors: true
+
+- name: Restart Nginx
+  service: name=nginx state=restarted
