@@ -1,0 +1,6 @@
+- hosts: vmtest
+  sudo: yes
+  roles:
+    - nginx
+    - transmission
+    - transmission-nginx
