@@ -6,19 +6,22 @@
   service: name=transmission-daemon state=stopped
   ignore_errors: true
 
-- name: Add group "transmission"
-  group: name=transmission
+- name: Add user 
+  user: name={{trans_user}} group=sshusers password={{trans_pswd}}
 
-- name: Add user "transmission"
-  user: name=transmission group=transmission password={{trans_user_pswd}}
+- name: Add downloads folder
+  file: path=/home/{{trans_user}}/downloads owner={{trans_user}} group=sshusers state=directory
 
-- name: Add transmission folders
-  remote_user: transmission
-  command: mkdir /home/transmission/downloads /home/transmission/torrents
-  ignore_errors: true
+- name: Add torrents folder
+  file: path=/home/{{trans_user}}/torrents owner={{trans_user}} group=sshusers state=directory
+
+- name: Change downloads folder mode
+  command: chmod 777 /home/{{trans_user}}/downloads
 
 - name: Copy Transmission configuration
-  template: src=settings.json dest=/var/lib/transmission-daemon/info/settings.json
+  template: 
+    src=settings.json
+    dest=/var/lib/transmission-daemon/info/settings.json
 
 - name: Make sur transmission is started
   service: name=transmission-daemon state=started

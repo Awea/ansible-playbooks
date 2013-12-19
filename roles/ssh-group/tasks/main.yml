@@ -1,0 +1,11 @@
+- name: Add group "sshusers"
+  group: name=sshusers
+
+- name: Copy ssh configuration
+  copy: 
+    src=sshd_config
+    dest=/etc/ssh/sshd_config
+
+- name: Make sure ssh is restarted
+  service: name=ssh state=restarted
+  ignore_errors: true
