@@ -86,4 +86,4 @@ Subsystem sftp /usr/lib/openssh/sftp-server
 # and ChallengeResponseAuthentication to 'no'.
 UsePAM yes
 
-AllowGroups sshusers
+AllowGroups sshusers vagrant
