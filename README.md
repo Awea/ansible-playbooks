@@ -1,5 +1,9 @@
 # Ansible Playbooks
 
+## Read first
+
+Don't use any of this playbooks in production, this is just for replicate a _standard_ production host. Some of them exist just for fun :)
+
 ## Installation
 
 * [Ansible](http://www.ansibleworks.com/docs/intro_installation.html)
