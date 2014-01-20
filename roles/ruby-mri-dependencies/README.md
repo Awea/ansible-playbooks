@@ -2,7 +2,6 @@
 
 Install some usefull dependencies for Ruby MRI.
 
-* [doc_apt](http://packages.ubuntu.com/search?keywords=doc_apt)
 * [bison](http://packages.ubuntu.com/search?keywords=bison)
 * [openssl](http://packages.ubuntu.com/search?keywords=openssl)
 * [libreadline5](http://packages.ubuntu.com/search?keywords=libreadline5)
