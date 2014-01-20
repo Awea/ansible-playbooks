@@ -2,7 +2,7 @@
 
 ## Read first
 
-Don't use any of this playbooks in production, this is just for replicate a _standard_ production host. Some of them exist just for fun :)
+Don't use any of this playbooks in production, this is just for replicating a _standard_ production host. Some of them exist just for fun :)
 
 ## Installation
 
