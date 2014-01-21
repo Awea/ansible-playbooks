@@ -1,0 +1,5 @@
+elasticsearch:
+  version: 0.90.10
+  dependencies:
+    - 'openjdk-6-jre'
+    - 'openjdk-6-jdk'

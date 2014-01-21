@@ -1,0 +1,16 @@
+- name: Install Elasticsearch dependencies
+  sudo: yes
+  action: ${ansible_pkg_mgr} pkg={{ item }} state=installed update-cache=yes
+  with_items: elasticsearch.dependencies
+
+- name: Download Elasticsearch
+  action: get_url url=http://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-{{ elasticsearch.version }}.deb dest=/tmp thirsty=yes mode=0440
+  register: elasticsearch_deb
+
+- name: Install Elasticsearch package
+  sudo: yes
+  action: dpkg -i --skip-same-version /tmp/elasticsearch-{{ elasticsearch.version }}.deb
+  when: elasticsearch_deb.changed 
+
+- name: Ensure Elasticsearch is running
+  service: name=elasticsearch state=started
