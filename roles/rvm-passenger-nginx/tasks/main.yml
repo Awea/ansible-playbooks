@@ -1,0 +1,13 @@
+---
+- name: Install RVM
+  command: \curl -sSL https://get.rvm.io | bash -s stable
+  ignore_errors: true
+
+- name: Install ruby-rvm
+  apt: name=ruby-rvm state=present
+
+- name: Install passenger
+  command: gem install passenger
+
+- name: Install libcurl4-openssl-dev
+  apt: name=libcurl4-openssl-dev state=present

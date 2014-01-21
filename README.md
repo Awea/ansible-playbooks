@@ -4,23 +4,34 @@
 
 Don't use any of this playbooks in production, this is just for replicating a _standard_ production host. Some of them exist just for fun :)
 
-## Installation
+## Ansible
 
-* [Ansible](http://www.ansibleworks.com/docs/intro_installation.html)
-* [Vagrant (testing)](http://www.vagrantup.com/downloads)
+Python + ssh = happiness
 
-## Running it
+* [Documentation](http://docs.ansible.com/)
 
-### Vagrant
+## Vagrant
+### Dirty testing
 
-```shell
-# you should have Vagrant already configured
-vagrant up
+Virtual machine + Ruby = ....
+
+![webscale-everywhere](http://what-if.xkcd.com/imgs/a/20/diamond_11.png)
+
+* [Documentation](http://docs.vagrantup.com/v2/)
+
+To quickly run some playbook on a fresh vagrant I use a `Rakefile`, there is a sample [here](https://github.com/Awea/ansible-playbooks/blob/master/sample.Rakefile).
+
+```ruby
+# run it !
+rake test
 ```
 
-### Ansible
+### vre alias
+#### zsh ftw !
 
 ```shell
-# you should have Ansible already configured
-ansible-playbook site.yml
+# Vagrant aliases
+alias vdf="vagrant destroy -f"
+alias vup="vagrant up"
+alias vre="vdf && vup"
 ```

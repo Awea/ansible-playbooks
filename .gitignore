@@ -3,4 +3,5 @@ site.yml
 .vagrant
 Vagrantfile
 vagrant_share
-*.sh
+Rakefile
+NOTES.md
