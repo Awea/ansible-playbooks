@@ -1,7 +1,16 @@
+# OS X related
 .DS_Store
+
+# Project related
 site.yml
-.vagrant
 Vagrantfile
 vagrant_share
 Rakefile
+group_vars/*
+host_vars/*
+
+# Vagrant 
+.vagrant
+
+# Stuff
 NOTES.md

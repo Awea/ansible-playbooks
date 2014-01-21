@@ -1,6 +1,0 @@
----
-# Transmission settings
-trans_web_user: transmission
-trans_web_user_pswd: password
-trans_user: transmission
-trans_pswd: $1$salty$SzJsU4qDcXp536Acnlp6I.

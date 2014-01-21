@@ -1,0 +1,5 @@
+transmission:
+  web_user: transmission
+  web_user_pswd: password
+  user: transmission
+  pswd: $1$salty$SzJsU4qDcXp536Acnlp6I.
