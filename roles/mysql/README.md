@@ -1,5 +1,5 @@
 #  Playbook
-## Elasticsearch
+## Mysql
 
 Install [MySQL](http://www.mysql.com/)
 
