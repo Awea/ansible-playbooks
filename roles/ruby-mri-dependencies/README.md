@@ -1,7 +1,7 @@
 #  Playbook
 ## Ruby MRI dependencies 
 
-Install some usefull dependencies for Ruby MRI.
+Install some useful dependencies for Ruby MRI.
 
 * [bison](http://packages.ubuntu.com/search?keywords=bison)
 * [openssl](http://packages.ubuntu.com/search?keywords=openssl)
