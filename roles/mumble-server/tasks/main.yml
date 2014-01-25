@@ -1,0 +1,3 @@
+---
+- name: Install mumble-server
+  apt: pkg=mumble-server state=present

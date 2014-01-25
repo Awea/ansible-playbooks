@@ -1,48 +1,20 @@
 ---
-- name: Install build-essential
-  apt: name=build-essential state=present
-
-- name: Install bison
-  apt: name=bison state=present
-
-- name: Install openssl
-  apt: name=openssl state=present
-
-- name: Install libreadline5
-  apt: name=libreadline5 state=present
-
-- name: Install libreadline-dev
-  apt: name=libreadline-dev
-
-- name: Install curl
-  apt: name=curl state=present
-
-- name: Install git-core
-  apt: name=git-core state=present
-
-- name: Install zlib1g
-  apt: name=zlib1g state=present
-
-- name: Install zlib1g-dev
-  apt: name=zlib1g-dev state=present
-
-- name: Install libssl-dev
-  apt: name=libssl-dev state=present
-
-- name: Install libsqlite3-0
-  apt: name=libsqlite3-0 state=present
-
-- name: Install libsqlite3-dev
-  apt: name=libsqlite3-dev state=present
-
-- name: Install sqlite3
-  apt: name=sqlite3 state=present
-
-- name: Install libxml2-dev
-  apt: name=libxml2-dev state=present
-
-- name: Install subversion
-  apt: name=subversion state=present
-
-- name: Install autoconf
-  apt: name=autoconf state=present
+- name: Install rmi dependencies
+  apt: name={{ item }} state=present
+  with_items:
+    - build-essential
+    - bison
+    - openssl
+    - libreadline5
+    - libreadline-dev
+    - curl
+    - git-core
+    - zlib1g
+    - zlib1g-dev
+    - libssl-dev
+    - libsqlite3-0
+    - libsqlite3-dev
+    - sqlite3
+    - libxml2-dev
+    - subversion
+    - autoconf
