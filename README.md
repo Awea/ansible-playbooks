@@ -64,7 +64,7 @@ alias vre="vdf && vup"
 
 ## Sites
 ### site.yml
-Runs ICU and Mumble.
+Run Mumble.
 
 ### default.site.yml
 Runs nginx, Transmission and its web interface.
