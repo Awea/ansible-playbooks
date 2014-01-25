@@ -10,9 +10,13 @@ Mumble mumble mumble, mumumbleble mumble.
 sudo aptitude update
 sudo aptitude upgrade
 sudo aptitude install mumble-server
-sudo aptitude install mumble-server-web
 ```
 
-## Apache configuration
-### Vhost
+__Deadly SIMPLE !__
 
+## Current server
+
+* [mumble.awea.fr](mumble.awea.fr)
+  * [get Mumble](http://mumble.sourceforge.net/)
+
+Thanks [Floreal](https://github.com/floreal)
