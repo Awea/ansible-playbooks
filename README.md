@@ -10,6 +10,25 @@ Python + ssh = happiness
 
 * [Documentation](http://docs.ansible.com/)
 
+### AnsibleWorks 
+#### Galaxy
+
+Ansible + Galaxy =~ Rubygem|pip|…
+
+* [Documentation](https://galaxy.ansibleworks.com/)
+
+### Galaxy roles
+
+* [MySQL](https://galaxy.ansibleworks.com/list#/roles/1)
+
+### Use galaxy
+
+```yml
+- hosts: all
+  roles:
+  - {role: role_name, role_var1: foobar, role_var2: none, role_var3: none }
+```
+
 ## Vagrant
 ### Dirty testing
 
