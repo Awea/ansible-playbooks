@@ -58,3 +58,10 @@ alias vdf="vagrant destroy -f"
 alias vup="vagrant up"
 alias vre="vdf && vup"
 ```
+
+## Sites
+### site.yml
+Runs ICU and Mumble.
+
+### default.site.yml
+Runs nginx, Transmission and its web interface.
