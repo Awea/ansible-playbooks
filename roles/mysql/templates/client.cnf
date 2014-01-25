@@ -1,5 +1,0 @@
-[client]
-{% if mysql.utf8_charset %}
-# apply utf8
-default-character-set = utf8
-{% endif %}

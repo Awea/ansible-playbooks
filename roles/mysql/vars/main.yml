@@ -1,7 +1,0 @@
-mysql:
-  root_password: hello_this_is_password
-  utf8_charset: true
-  mysqld:
-    bind_address: 127.0.0.1
-    port: 3306
-    key_buffer: 16M
