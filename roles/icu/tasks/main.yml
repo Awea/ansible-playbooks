@@ -1,3 +1,0 @@
----
-- name: Install libicu48
-  apt: name=libicu48 state=present

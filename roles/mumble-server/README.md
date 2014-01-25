@@ -3,7 +3,16 @@
 
 Mumble mumble mumble, mumumbleble mumble.
 
-## Dependencies
+## Work in progress
+### Installation
 
-* [icu](http://packages.ubuntu.com/search?keywords=icu)
-  * see related [README](https://github.com/Awea/ansible-playbooks/blob/master/roles/icu/README.md)
+```shell
+sudo aptitude update
+sudo aptitude upgrade
+sudo aptitude install mumble-server
+sudo aptitude install mumble-server-web
+```
+
+## Apache configuration
+### Vhost
+

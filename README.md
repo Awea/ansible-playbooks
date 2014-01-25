@@ -5,15 +5,18 @@
 Don't use any of this playbooks in production, this is just for replicating a _standard_ production host. Some of them exist just for fun :)
 
 ## Ansible
-
-Python + ssh = happiness
+### Python + ssh = happiness
 
 > Ansible is a radically simple configuration-management, deployment, task-execution, and multinode orchestration framework.
 
 * [Documentation](http://docs.ansible.com/)
 
-### AnsibleWorks 
-#### Galaxy
+### Installation
+
+* [Homebrew](http://brew.sh/)
+* [Ansible](http://devopsu.com/guides/ansible-ubuntu-debian.html)
+* [Python on OS X](http://docs.python-guide.org/en/latest/starting/install/osx/)
+* [Disabling root for user](http://stackoverflow.com/questions/14926562/activating-the-root-user-with-a-python-script-osx)
 
 > AnsibleWorks Galaxy is your hub for finding, reusing, and sharing the best Ansible content.
 
