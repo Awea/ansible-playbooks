@@ -1,0 +1,6 @@
+- hosts: vmtest
+  sudo: yes
+  roles:
+    - icu
+    - mumble-server
+    - {role: rbenv, env: system, ruby_version: 2.1.0-preview1}

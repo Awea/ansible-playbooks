@@ -1,8 +1,6 @@
 # OS X related
 .DS_Store
 
-# Project related
-site.yml
 Vagrantfile
 vagrant_share
 Rakefile
