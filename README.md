@@ -8,10 +8,14 @@ Don't use any of this playbooks in production, this is just for replicating a _s
 
 Python + ssh = happiness
 
+> Ansible is a radically simple configuration-management, deployment, task-execution, and multinode orchestration framework.
+
 * [Documentation](http://docs.ansible.com/)
 
 ### AnsibleWorks 
 #### Galaxy
+
+> AnsibleWorks Galaxy is your hub for finding, reusing, and sharing the best Ansible content.
 
 Ansible + Galaxy =~ Rubygem|pip|…
 
@@ -21,7 +25,7 @@ Ansible + Galaxy =~ Rubygem|pip|…
 
 * [MySQL](https://galaxy.ansibleworks.com/list#/roles/1)
 
-### Use galaxy
+### Using galaxy
 
 ```yml
 - hosts: all
