@@ -11,4 +11,9 @@ host_vars/*
 .vagrant
 
 # Stuff
+Vagrantfile
+site.yml
 NOTES.md
+
+# Work in progress
+roles/wallabag-nginx
