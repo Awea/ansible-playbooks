@@ -7,16 +7,16 @@
   ignore_errors: true
 
 - name: Add user 
-  user: name={{trans_user}} group=sshusers password={{trans_pswd}}
+  user: name={{transmission.user}} password={{transmission.pswd}}
 
 - name: Add downloads folder
-  file: path=/home/{{trans_user}}/downloads owner={{trans_user}} group=sshusers state=directory
+  file: path=/home/{{transmission.user}}/downloads owner={{transmission.user}} state=directory
 
 - name: Add torrents folder
-  file: path=/home/{{trans_user}}/torrents owner={{trans_user}} group=sshusers state=directory
+  file: path=/home/{{transmission.user}}/torrents owner={{transmission.user}} state=directory
 
 - name: Change downloads folder mode
-  command: chmod 777 /home/{{trans_user}}/downloads
+  command: chmod 777 /home/{{transmission.user}}/downloads
 
 - name: Copy Transmission configuration
   template: 

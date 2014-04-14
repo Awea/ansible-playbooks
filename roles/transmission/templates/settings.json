@@ -12,7 +12,7 @@
     "blocklist-url": "http://www.example.com/blocklist",
     "cache-size-mb": 4,
     "dht-enabled": true,
-    "download-dir": "/home/{{trans_user}}/downloads",
+    "download-dir": "/home/{{transmission.user}}/downloads",
     "download-limit": 100,
     "download-limit-enabled": 0,
     "download-queue-enabled": true,
@@ -45,10 +45,10 @@
     "rpc-authentication-required": true,
     "rpc-bind-address": "0.0.0.0",
     "rpc-enabled": true,
-    "rpc-password": "{{trans_web_user_pswd}}",
+    "rpc-password": "{{transmission.web_user_pswd}}",
     "rpc-port": 9091,
     "rpc-url": "/transmission/",
-    "rpc-username": "{{trans_web_user}}",
+    "rpc-username": "{{transmission.web_user}}",
     "rpc-whitelist": "127.0.0.1",
     "rpc-whitelist-enabled": true,
     "scrape-paused-torrents-enabled": true,
@@ -68,5 +68,5 @@
     "upload-slots-per-torrent": 14,
     "utp-enabled": true,
     "watch-dir-enabled": true,
-    "watch-dir": "/home/{{trans_user}}/torrents"
+    "watch-dir": "/home/{{transmission.user}}/torrents"
 }
